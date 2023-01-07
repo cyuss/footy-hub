@@ -1,26 +1,29 @@
 [project]
 name = "footy-hub"
 version = "0.1.0"
-description = ""
+description = "Football data analysis for learning purpose."
 readme = "README.md"
+license = "MIT"
 authors = ["Cyuss <maamra.youcef@gmail.com>"]
 classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Mathematics"
 ]
 
 [project.urls]
-homepage = "https://github.com/cyuss/footy-hub"
-documentation = ""
+Homepage = "https://github.com/cyuss/footy-hub"
+Documentation = "https://ohmykode.com/footy-hub/"
 
 [tool.poetry]
 name = "footy-hub"
 version = "0.1.0"
-description = ""
+description = "Football data analysis for learning purpose."
 authors = ["Cyuss <maamra.youcef@gmail.com>"]
-# readme = "README.md"
 packages = [
     {include = "crawler"},
     {include = "market_analysis"},
