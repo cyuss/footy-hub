@@ -39,7 +39,7 @@ jobs:
           key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('pyproject.toml') }}
 
       - name: Install docs dependencies
-        run: poetry install --only docs
+        run: poetry install --only docs && exit 0
         if: steps.cached-poetry-deps.outputs.cache-hit != 'true'
 
       - name: Deploy Documentation
