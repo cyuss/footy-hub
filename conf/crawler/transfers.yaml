@@ -1,0 +1,4 @@
+task: "transfers market"
+url: "https://www.transfermarkt.com/{}/startseite/wettbewerb/GB1/plus/?saison_id={}"
+league: "premier-league" # premier-league, bundesliga...
+season: 2020

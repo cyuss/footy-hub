@@ -1,0 +1,5 @@
+driver: neo4j
+user: xxx
+password: xxx
+host: localhost
+port: 8001
