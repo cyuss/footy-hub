@@ -27,7 +27,8 @@ authors = ["Cyuss <maamra.youcef@gmail.com>"]
 packages = [
     {include = "crawler"},
     {include = "market_analysis"},
-    {include = "utils"}
+    {include = "utils"},
+    {include = "conf"}
 ]
 
 [tool.poetry.dependencies]
@@ -112,9 +113,14 @@ use_parentheses = true
 minversion = "6.0"
 testpaths = ["tests/"]
 markers = [
-    "crawler",
-    "ml",
-    "data"
+    "crawler: Data Scraping related tests",
+    "ml: Machine Learning related tests.",
+    "data: Data related tests.",
+    "slow: Slow tests."
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning",
 ]
 
 [tool.coverage.run]
