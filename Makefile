@@ -16,7 +16,7 @@ doc: ## Generate MkDocs documentation and serve.
 	@poetry run mkdocs serve
 
 start: ## Start the API locally.
-	@echo "Nothing to run for now, let's check this later!"
+	@poetry run python main.py
 
 test: ## Run unit tests.
 	@poetry run pytest --disable-pytest-warnings
@@ -63,6 +63,7 @@ clean: ## Delete unwanted files.
 	@rm -rf `find . -name .pytest_cache`
 	@rm -rf `find . -name .ipynb_checkpoints`
 	@rm -rf `find . -name .DS_Store`
+	@rm -rf outputs
 	@rm -f `find . -type f -name '*.py[co]' `
 	@rm -f `find . -type f -name '*~' `
 	@rm -f `find . -type f -name '.*~' `
@@ -78,7 +79,7 @@ clean: ## Delete unwanted files.
 	@rm -f .coverage
 	@rm -f .coverage.*
 	@rm -rf generated
-	@find . -name '*.pyc' -exec rm --force {} +
-	@find . -name '*.pyo' -exec rm --force {} +
-	@find . -name '*~'    -exec rm --force {} +
+	@rm -f `find . -name '*.pyc'`
+	@rm -f `find . -name '*.pyo'`
+	@rm -f `find . -name '*~'`
 	@echo "Your repo is clean! 👌🏼 ✨"

@@ -1,0 +1,12 @@
+#+TITLE: Foot Hub Notes
+#+AUTHOR: Cyuss
+#+OPTIONS: toc:4 ^:nil
+#+STARTUP: align hide indent fold entitiespretty
+#+SEQ_TODO: NEXT(n!) TODO(t!) WAITING(w!) | DONE(d!) CANCELED(c@)
+#+SEQ_TODO: NOTE(o!)
+#+SEQ_TODO: BUG(b!) | CANCELED(c@) FIXED(f!)
+
+
+* Notes
+** TODO List data sources
+** TODO Find a good python scraper

@@ -1,5 +1,5 @@
 site_name: 'Footy Hub'
-repo_name: 'footy-hub'
+repo_name: 'cyuss/footy-hub'
 repo_url: 'https://github.com/cyuss/footy-hub'
 nav:
   - Home: 'index.md'
@@ -12,21 +12,36 @@ extra:
 theme:
   name: 'material'
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/brands/github-alt
   palette:
-      primary: 'teal'
-      accent: 'green'
+      # - primary: 'teal'
+      # - accent: 'green'
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: 'teal'
+        accent: 'green'
+        toggle:
+          icon: material/weather-sunny
+          name: Switch to dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: 'teal'
+        accent: 'green'
+        toggle:
+          icon: material/weather-night
+          name: Switch to light mode
   features:
       # - navigation.tabs
       - navigation.top
   font:
-      text: 'RobotoMono'
+      text: 'Roboto'
   # logo:
   #     icon: 'textsms'
   # icon:
   #     logo: 'textsms'
 plugins:
   - search
+  - tags
   # - mkdocstrings
   # - autorefs
   - minify:
