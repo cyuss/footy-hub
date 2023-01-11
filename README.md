@@ -14,5 +14,10 @@
 ## Context
 
 ## Get Started
+To use and explore this repository, first you need to install the dependencies using `Poetry` (that you can install via this [link](https://python-poetry.org/docs/)).
+
+``` sh
+> poetry install
+```
 
 ## Future Improvements
